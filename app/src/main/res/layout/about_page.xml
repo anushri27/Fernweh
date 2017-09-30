@@ -3,16 +3,34 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/aboutpg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="About"
+        android:textColor="#8B008B"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Pellentesque massa ipsum, iaculis quis nibh vel, dictum vehicula quam.Nunc aliquam
+lorem massa, a accumsan diam placerat ut.
+\n\nAenean vestibulum non massa nec interdum. Donec egestas at turpis a
+fermentum. Duis ac odio vel odio vulputate efficitur vel eu quam.
+\n\nInteger aliquet efficitur neque."
+        android:layout_below="@+id/aboutpg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="63dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="About" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

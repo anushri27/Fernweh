@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home_page) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame
-                            ,new HomeFragment()).commit();
+                    .replace(R.id.contact_frame
+                    ,new HomeFragment());
             // Handle the camera action
         } else if (id == R.id.nav_about_page) {
             fragmentManager.beginTransaction()
