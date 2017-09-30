@@ -110,14 +110,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void gotoAbout(View view) {
 
-        Intent intent = new Intent(this, About2.class);
-        startActivity(intent);
+        getFragmentManager().beginTransaction()
+                .replace(R.id.content_frame
+                        ,new AboutFragment()).commit();
 
     }
 
     public void gotoDestination (View view) {
 
-        Intent intent = new Intent (this, MyDestination.class);
-        startActivity(intent);
+        getFragmentManager().beginTransaction()
+                .replace(R.id.content_frame
+                        ,new MyDestinationFragment()).commit();
     }
 }
