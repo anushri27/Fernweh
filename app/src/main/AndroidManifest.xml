@@ -19,6 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".About2" />
+        <activity android:name=".MyDestination"></activity>
     </application>
 
 </manifest>

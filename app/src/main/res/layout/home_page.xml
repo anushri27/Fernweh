@@ -18,34 +18,44 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Homepg"
         android:ems="10"
         android:inputType="textMultiLine"
         android:text="Hello! Welcome to Fernweh!
 \n\nThis app is perfect for the adventurer in you -- pinpoint your favorite locations around town (or around the world)
 and Fernweh will remind you when you are near!
-\n\n Happy exploring!!"
-        android:layout_below="@+id/Homepg"
-        android:layout_centerHorizontal="true" />
+\n\n Happy exploring!!" />
 
+
+    // about button
     <Button
         android:id="@+id/aboutbtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="46dp"
         android:text="About"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="22dp"
+        android:onClick = "gotoAbout"
+        android:layout_below="@+id/desbtn"
         android:layout_centerHorizontal="true" />
 
+    // my destination button
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/desbtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My Destinations"
-        android:layout_above="@+id/aboutbtn"
+        android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="21dp" />
+        android:layout_marginTop="46dp"
+        android:onClick="gotoDestination"
+        />
+
 </RelativeLayout>

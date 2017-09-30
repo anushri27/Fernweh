@@ -1,5 +1,6 @@
 package com.example.anush.fernweh;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,9 +14,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,8 +87,8 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home_page) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.contact_frame
-                    ,new HomeFragment());
+                    .replace(R.id.content_frame
+                            ,new HomeFragment()).commit();
             // Handle the camera action
         } else if (id == R.id.nav_about_page) {
             fragmentManager.beginTransaction()
@@ -106,5 +109,19 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public void gotoAbout(View view) {
+
+        Intent intent = new Intent(this, About2.class);
+        startActivity(intent);
+
+    }
+
+    public void gotoDestination (View view) {
+
+        Intent intent = new Intent (this, MyDestination.class);
+        startActivity(intent);
     }
 }
