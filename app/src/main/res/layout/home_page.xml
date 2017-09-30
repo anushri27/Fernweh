@@ -3,16 +3,49 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/Homepg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="41dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="63dp"
         android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
         android:inputType="textPersonName"
-        android:text="Home" />
+        android:text="Home"
+        android:textColor="#8B008B"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="Hello! Welcome to Fernweh!
+\n\nThis app is perfect for the adventurer in you -- pinpoint your favorite locations around town (or around the world)
+and Fernweh will remind you when you are near!
+\n\n Happy exploring!!"
+        android:layout_below="@+id/Homepg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/aboutbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:text="About"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Destinations"
+        android:layout_above="@+id/aboutbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
 </RelativeLayout>
