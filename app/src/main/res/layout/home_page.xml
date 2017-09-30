@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFB6C1"
     android:visibility="visible">
 
     <EditText
@@ -12,6 +13,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
         android:inputType="textPersonName"
@@ -33,7 +35,8 @@ and Fernweh will remind you when you are near!
 \n\n Happy exploring!!"
         android:layout_below="@+id/Homepg"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="#FFB6C1"/>
 
 
     // about button
