@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
 
     <EditText
         android:id="@+id/Homepg"
@@ -34,28 +37,29 @@ and Fernweh will remind you when you are near!
 
 
     // about button
+
     <Button
         android:id="@+id/aboutbtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
-        android:layout_marginTop="22dp"
-        android:onClick = "gotoAbout"
         android:layout_below="@+id/desbtn"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="gotoAbout"
+        android:text="About" />
 
     // my destination button
+
     <Button
         android:id="@+id/desbtn"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Destinations"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="46dp"
         android:onClick="gotoDestination"
-        />
+        android:text="My Destinations" />
 
 </RelativeLayout>
