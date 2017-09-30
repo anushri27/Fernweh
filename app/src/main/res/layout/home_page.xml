@@ -18,6 +18,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:inputType="textPersonName"
         android:text="Home"
+        android:layout_marginLeft="15dp"
         android:textColor="#8B008B"
         android:textSize="36sp" />
 
@@ -34,6 +35,8 @@
 and Fernweh will remind you when you are near!
 \n\n Happy exploring!!"
         android:layout_below="@+id/Homepg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:background="#FFB6C1"/>
