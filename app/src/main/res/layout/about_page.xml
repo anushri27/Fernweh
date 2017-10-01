@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:id="@+id/fullabout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFB6C1"
+    android:layout_alignParentBottom="true">
 
     <EditText
         android:id="@+id/aboutpg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:ems="10"
         android:fontFamily="sans-serif-smallcaps"
         android:inputType="textPersonName"
         android:text="About"
         android:textColor="#8B008B"
-        android:textSize="36sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="36sp" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/aboutpg"
         android:ems="10"
         android:inputType="textMultiLine"
         android:text="Ever see a really cool place that you want to go to? A national monument
 a city's hidden gem, or even a small restaurant recommended by your coworker?
 \n\nWhile you might remember the place at the time chances are that you won't remember if you just
 happen to be in the area.
-\n\nWith Fernweh, once you pinpoint your favorite locations, it will remind you when you are near!"
-        android:layout_below="@+id/aboutpg"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+\n\nWith Fernweh, once you pinpoint your favorite locations, it will remind you when you are near!" />
 </RelativeLayout>
