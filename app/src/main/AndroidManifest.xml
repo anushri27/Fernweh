@@ -53,11 +53,6 @@
             android:value="AIzaSyCgttNPkx_1WacM0xF1qEUtPunCKOkgT5A" />
 
 
-
-        <activity
-            android:name=".MyDestinationMapsActivity"
-            android:label="@string/title_activity_my_destination_maps"></activity>
-
     </application>
 
 
